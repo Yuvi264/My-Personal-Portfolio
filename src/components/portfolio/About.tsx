@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-
+import yuvi from '../../assets/yuvi.png';
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -32,7 +32,7 @@ const About = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <img
-                    src="/headshot.jpg"
+                    src={yuvi}
                     alt="Professional headshot"
                     className="w-full h-full object-cover"
                     onError={(e) => {

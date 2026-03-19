@@ -2,30 +2,30 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-
+import bookStore from '../../assets/book.png';
 const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce application with user authentication, product management, shopping cart, and payment integration. Built with modern web technologies for optimal performance.',
-      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe API'],
-      image: '/project1.jpg',
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
-      featured: true,
-    },
-    {
-      title: 'Mentor Matching App',
-      description: 'A platform connecting mentors and mentees in the tech industry. Features include profile matching, scheduling, video calls, and progress tracking.',
-      technologies: ['Python', 'Flask', 'React', 'PostgreSQL', 'WebRTC'],
-      image: '/project2.jpg',
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/example',
-      featured: true,
-    },
+  title: 'Chat Application – Real-Time Messaging Platform',
+  description: 'A full-stack real-time chat application that allows users to send and receive messages instantly using WebSockets. Features include authentication, one-to-one and group chats, typing indicators, and online/offline status.',
+  technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'Tailwind CSS'],
+  image: 'https://w7.pngwing.com/pngs/397/206/png-transparent-chatting-app-people-thumbnail.png',
+  liveUrl: 'https://realtime-chat-app-a8yf.onrender.com',
+  githubUrl: 'https://github.com/Yuvi264/Realtime-chat-app',
+  featured: true,
+},
+{
+  title: 'Bookstore Application',
+  description: 'A full-stack bookstore web application where users can browse, search, and manage books. Includes features like authentication, cart, wishlist, order simulation, and an admin panel for managing inventory.',
+  technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Redux', 'Tailwind CSS'],
+  image: bookStore,
+  liveUrl: 'https://jolly-cobbler-922bba.netlify.app/',
+  githubUrl: 'https://github.com/Yuvi264/New_book_store_application',
+  featured: true,
+},
     {
       title: 'Task Management Dashboard',
       description: 'A productivity application with drag-and-drop functionality, real-time collaboration, team management, and detailed analytics.',
